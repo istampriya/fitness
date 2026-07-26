@@ -1,0 +1,472 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+    
+}
+
+
+/* Navigation Bar */
+
+header{
+    background:#000;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+}
+
+
+.logo span{
+    color:#ff5a00;
+}
+
+
+nav ul{
+    display:flex;
+    gap: 25px;
+    list-style:none;
+}
+
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    position:relative;
+    transition:0.3s;
+
+}
+
+
+/* Navigation Hover */
+
+nav ul li a:hover{
+
+    color:#ff5a00;
+
+}
+
+
+nav ul li a::after{
+
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#ff5a00;
+    left:0;
+    bottom:-8px;
+    transition:0.3s;
+
+}
+
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+
+.login{
+
+background:#ff5a00;
+padding:10px 22px;
+border-radius:25px;
+
+}
+
+
+
+/* All Sections */
+
+section{
+
+    min-height:100vh;
+    padding:80px 8%;
+    overflow:hidden;
+
+}
+
+
+
+/* Home Section */
+
+
+.home{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.home-content{
+
+width:50%;
+
+}
+
+
+.home-content h1{
+
+font-size:55px;
+
+}
+
+
+.home-content span{
+
+color:#ff5a00;
+
+}
+
+
+.home-content p{
+
+font-size:18px;
+line-height:1.6;
+margin:25px 0;
+
+}
+
+
+button{
+
+background:#ff5a00;
+color:white;
+border:none;
+padding:14px 30px;
+border-radius:30px;
+cursor:pointer;
+transition:0.4s;
+
+}
+
+
+
+/* Button Hover */
+
+
+button:hover{
+
+background:white;
+color:#ff5a00;
+transform:scale(1.08);
+
+}
+
+
+
+.home-image img{
+
+width:450px;
+height:450px;
+object-fit:cover;
+border-radius:30px;
+transition:0.5s;
+
+}
+
+
+.home-image img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+
+/* Heading */
+
+
+.heading{
+
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+
+}
+
+
+
+/* Membership Cards */
+
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+.card{
+
+background:#1d1d1d;
+width:300px;
+padding:35px;
+border-radius:20px;
+text-align:center;
+transition:0.5s;
+cursor:pointer;
+
+}
+
+
+
+/* Card Hover */
+
+
+.card:hover{
+
+transform:translateY(-15px);
+box-shadow:0 15px 30px rgba(255,90,0,0.4);
+
+}
+
+
+.card p{
+
+margin:15px;
+
+}
+
+
+.premium{
+
+border:2px solid #ff5a00;
+
+}
+
+
+
+
+
+/* Trainers */
+
+
+.trainer-container{
+
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+
+}
+
+
+.trainer{
+
+background:#1d1d1d;
+padding:30px;
+width:250px;
+text-align:center;
+border-radius:20px;
+transition:0.4s;
+
+}
+
+
+
+.trainer:hover{
+
+transform:scale(1.08);
+background:#222;
+
+}
+
+
+.trainer img{
+
+width:160px;
+height:160px;
+border-radius:50%;
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/* Workout Programs */
+
+
+.workout-container{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+.workout{
+
+background:#1d1d1d;
+width:320px;
+border-radius:20px;
+overflow:hidden;
+transition:0.5s;
+
+}
+
+
+.workout:hover{
+
+transform:translateY(-15px);
+
+}
+
+
+.workout img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+
+.workout h3,
+.workout p{
+
+padding:15px;
+
+}
+
+
+
+
+
+/* Reviews */
+
+
+.review{
+
+background:#1d1d1d;
+width:60%;
+margin:auto;
+padding:40px;
+text-align:center;
+border-radius:20px;
+transition:0.4s;
+
+}
+
+
+.review:hover{
+
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(255,90,0,0.3);
+
+}
+
+
+
+.contact-box{
+
+text-align:center;
+font-size:18px;
+line-height:2;
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+background:black;
+padding:25px;
+text-align:center;
+
+}
+
+
+
+
+/* Mobile View */
+
+
+@media(max-width:900px){
+
+
+nav ul{
+
+display:none;
+
+}
+
+
+.home{
+
+flex-direction:column;
+
+}
+
+
+.home-content{
+
+width:100%;
+text-align:center;
+
+}
+
+
+.home-content h1{
+
+font-size:40px;
+
+}
+
+
+.home-image img{
+
+width:300px;
+height:300px;
+
+}
+
+
+.review{
+
+width:90%;
+
+}
+
+}
