@@ -271,46 +271,86 @@ border:2px solid #ff5a00;
 
 
 
-/* Trainers */
-
+/* ================= Trainers ================= */
 
 .trainer-container{
 
 display:flex;
 justify-content:center;
-gap:50px;
+gap:35px;
 flex-wrap:wrap;
 
 }
 
-
 .trainer{
 
 background:#1d1d1d;
-padding:30px;
-width:250px;
-text-align:center;
+width:320px;
 border-radius:20px;
-transition:0.4s;
+overflow:hidden;
+text-align:center;
+transition:.5s;
 
 }
-
-
 
 .trainer:hover{
 
-transform:scale(1.08);
-background:#222;
+transform:translateY(-15px);
+box-shadow:0 15px 30px rgba(255,90,0,.35);
 
 }
 
-
 .trainer img{
 
-width:160px;
-height:160px;
-border-radius:50%;
-margin-bottom:15px;
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:0;
+
+}
+
+.trainer h3{
+
+margin-top:20px;
+font-size:28px;
+
+}
+
+.trainer h4{
+
+color:#ff5a00;
+margin-top:10px;
+font-size:18px;
+
+}
+
+.trainer p{
+
+padding:15px 25px;
+line-height:1.7;
+color:#d8d8d8;
+
+}
+
+.trainer-btn{
+
+display:inline-block;
+margin-bottom:25px;
+padding:12px 28px;
+background:#ff5a00;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.4s;
+
+}
+
+.trainer-btn:hover{
+
+background:white;
+color:#ff5a00;
+transform:scale(1.08);
 
 }
 
