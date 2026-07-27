@@ -1,3 +1,46 @@
+
+nav ul{
+    display:flex;
+    gap: 25px;
+    list-style:none;
+}
+
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    position:relative;
+    transition:0.3s;
+
+}
+* Navigation Hover */
+
+nav ul li a:hover{
+
+    color:#ff5a00;
+
+}
+
+
+nav ul li a::after{
+
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#ff5a00;
+    left:0;
+    bottom:-8px;
+    transition:0.3s;
+
+}
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
 /* Body */
 *{
     margin:0;
@@ -6,8 +49,9 @@
     font-family:Arial, sans-serif;
 }
 
+
 body{
-    background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    background:linear-gradient(#0b0b0b);
 }
 
 /* Membership Section */
@@ -138,5 +182,12 @@ body{
 .popular:hover{
     transform:translateY(-10px);
 }
+
+}
+footer{
+
+background:black;
+padding:25px;
+text-align:center;
 
 }
