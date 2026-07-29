@@ -85,12 +85,12 @@ body{
 
 .card{
     width:300px;
-    background:white;
+    background:black;
     border-radius:20px;
     padding:35px;
     position:relative;
     transition:0.4s;
-    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    box-shadow:0 10px 20px  gray;
 }
 
 .card:hover{
@@ -104,13 +104,13 @@ body{
 
 .card h3{
     margin:20px 0;
-    color:#222;
+    color:white;
     font-size:35px;
 }
 
 .card h3 span{
     font-size:18px;
-    color:gray;
+    color:white;
 }
 
 .card ul{
@@ -122,7 +122,7 @@ body{
 .card ul li{
     padding:10px 0;
     font-size:17px;
-    color:#444;
+    color:white;
     border-bottom:1px solid #ddd;
 }
 
@@ -189,5 +189,8 @@ footer{
 background:black;
 padding:25px;
 text-align:center;
+margin-top: 40px;
+
+
 
 }
