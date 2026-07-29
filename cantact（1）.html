@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitZone - Contact</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 350px;
+            margin: 100px auto;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            font-weight: bold;
+            color: white;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+            background-color: #333;
+            color: white;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color:orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color:darkorange;
+        }
+
+        input[type="reset"] {
+            background-color:orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="reset"]:hover {
+            background-color:darkorange;
+        }
+
+        .contact-details {
+            text-align: center;
+            margin-top: 25px;
+            color: white;
+        }
+
+        .contact-details h2 {
+            color: white;
+        }
+
+        .contact-details p {
+            margin: 8px 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Contact Us</h1>
+
+        <form>
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div class="contact-details">
+            <h2>FitZone Contact Details</h2>
+            <p>   Hyderabad, Telangana</p>
+            <p>   +91 9876543210</p>
+            <p>   support@fitzone.com</p>
+        </div>
+
+        <a href="index.html">← Back to Home</a>
+
+    </div>
+
+</body>
+</html>
